@@ -18,8 +18,18 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        //myRBD.AddForce(Vector2.right * velocityModifier)
-          transform.position  = new Vector2(_horizontal * velocityModifier, 0);
+        if (Input.GetKey(KeyCode.D))
+        {
+            myRBD.AddForce(Vector2.right * velocityModifier);
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            myRBD.AddForce(Vector2.left * velocityModifier);
+        }
+
+
+         // transform.position  = new Vector2(_horizontal * velocityModifier, 0);
+         // _horizontal = 
     }
     void Update()
     {
