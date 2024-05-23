@@ -1,0 +1,46 @@
+{
+    "name": "InputJump",
+    "maps": [
+        {
+            "name": "PlayerJump",
+            "id": "ae7991b7-db7b-415e-9d1a-df13f2bec08c",
+            "actions": [
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "cd3183f9-ead2-41cb-be79-eb1b42c07fc0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4d5bfc40-c8b2-4a38-a63b-48695e50fae6",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "SaltoJugador",
+            "bindingGroup": "SaltoJugador",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
